@@ -16,7 +16,7 @@
     --container-width: 1200px;
     --shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     --read: linear-gradient(135deg, rgba(24, 77, 104, 0.8) 0%, rgba(87, 202, 133, 0.8) 100%);
-    --not-read: linear-gradient(135deg, #e3e3e3 0%, #5d6874);
+    --not-read: linear-gradient(315deg, #90d5ec 0%, #fc575e 74%);
 }
 
 /* CSS RESET */
@@ -97,7 +97,6 @@ body{
     font-weight: 300;
     color: var(--white);
     border-radius: var(--border-radius);
-    background: var(--read);
     box-shadow: var(--shadow);
     display: flex;
     flex-direction: column;
@@ -147,7 +146,7 @@ body{
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6);
-    display: flex;
+    display: none;
     padding-top:300px;
     justify-content: center;
 }
