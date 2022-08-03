@@ -32,6 +32,7 @@ function addBookToLibrary() {
   myLibrary.push(temp);
   number++;
   displayCard(temp);
+  reset();
 }
 
 
@@ -84,6 +85,13 @@ window.onclick = function (event) {
   }
 }
 
+function reset(){
+  const properties = ['title', 'author', 'pages', 'language', 'published_date'];
+  for(let i=0;i<5;i++){
+    document.getElementById(properties[i]).value="";
+  }
+  document.getElementById('status').checked = false;
+}
 
 
 add_book.onclick = () => { overlay.style.display = 'flex' };
